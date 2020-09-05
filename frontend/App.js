@@ -1,18 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Bottom from './components/General/BottomTab';
 
-import Education from './components/Education'
 
-export default function App() {
+const App = () => {
+    return (
+
+      <NavigationContainer>
+        <Bottom ></Bottom>
+      </NavigationContainer>
   
-  return (
-    <View style={styles.container}>
-      <Education></Education>
-    </View>
-  );
-}
+    );
 
+}
+export default App;
 
 const styles = StyleSheet.create({
   container: {
